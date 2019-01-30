@@ -1,16 +1,14 @@
-kind: pipeline
-name: default
+pipeline:
+  build:
+    image: python
+    commands:
+      - pip install -r requirements.txt
+  publish:
+    image: plugins/docker
+    username: flowq
+    password: gjgj123a 
+    repo: flowq/bar
+    tags:
+      - latest
 
-steps:
-- name: web-flask
-  image: python
-  commands:
-  - pip install -r requirements.txt
 
-- name: publish
-  image: plugins/docker
-  settings:
-      username: flowq
-      password: gjgj123a 
-      auto_tag: true
-      repo: flowq/bar
