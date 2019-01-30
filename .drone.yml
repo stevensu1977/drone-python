@@ -13,4 +13,4 @@ steps:
       username: flowq
       password: gjgj123a 
       auto_tag: true
-      repo: foo/bar
+      repo: flowq/bar
