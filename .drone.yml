@@ -10,4 +10,5 @@ steps:
 - name: publish
   image: plugins/docker
   settings:
-    repo: foo/bar
+      auto_tag: true
+      repo: foo/bar
