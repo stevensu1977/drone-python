@@ -9,4 +9,5 @@ steps:
 
 - name: publish
   image: plugins/docker
-  repo: foo/bar
+  settings:
+    repo: foo/bar
