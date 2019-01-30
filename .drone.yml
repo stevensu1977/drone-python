@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 
 steps:
-- name: web
+- name: web-flask
   image: python
   commands:
   - pip install -r requirements.txt
